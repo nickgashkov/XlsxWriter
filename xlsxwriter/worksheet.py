@@ -489,7 +489,7 @@ class Worksheet(xmlwriter.XMLwriter):
             row:    The cell row (zero indexed).
             col:    The cell column (zero indexed).
             string: Cell data. Str.
-            format: An optional cell Format object.
+            cell_format: An optional cell Format object.
 
         Returns:
             0:  Success.
@@ -825,7 +825,7 @@ class Worksheet(xmlwriter.XMLwriter):
             row:    The cell row (zero indexed).
             col:    The cell column (zero indexed).
             url:    Hyperlink url.
-            format: An optional cell Format object.
+            cell_format: An optional cell Format object.
             string: An optional display string for the hyperlink.
             tip:    An optional tooltip.
         Returns:
@@ -1083,7 +1083,7 @@ class Worksheet(xmlwriter.XMLwriter):
             row:    The cell row (zero indexed).
             col:    The cell column (zero indexed).
             data:   A list of tokens to be written with write().
-            format: An optional cell Format object.
+            cell_format: An optional cell Format object.
         Returns:
             0:  Success.
             other: Return value of write() method.
@@ -1106,7 +1106,7 @@ class Worksheet(xmlwriter.XMLwriter):
             row:    The cell row (zero indexed).
             col:    The cell column (zero indexed).
             data:   A list of tokens to be written with write().
-            format: An optional cell Format object.
+            cell_format: An optional cell Format object.
         Returns:
             0:  Success.
             other: Return value of write() method.
